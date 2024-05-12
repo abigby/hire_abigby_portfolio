@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('./assets/css/_variables.css');
+@import url('./assets/css/_helper.css');
+@import url('./assets/fonts/fonts-inter.css');
+@import url('./assets/fonts/fonts-poppins.css');
+@import url('./assets/fonts/fonts-roboto.css');
+@import url('./assets/css/button-styles.css');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 1.625;
+    background-color: var(--body-color);
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+a:hover {
+    --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+}
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", Roboto, "Helvetica Neue", sans-serif;
+    color: var(--title-color);
+    line-height: 1.25;
+    font-weight: 600;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
