@@ -2,7 +2,9 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 
     nav.navbar {
-        
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+
         div.container {
             padding-right: 0;
             padding-left: 0;
@@ -15,12 +17,13 @@ header {
                 margin-left: 1rem;
 
                 & > img {
-                    width: 5rem;
+                    width: 6rem;
+                    margin-left: 2rem;
                 }
             }
             button.navbar-toggler {
                 border: 2px solid #fff;
-                margin-right: 1rem;
+                margin-right: 3rem;
 
                 span.navbar-toggler-icon {
                     background-image: url('../../../assets/img/mobile-menu-icon.svg');
@@ -29,10 +32,12 @@ header {
             }
             div.navbar-collapse {
                 background-color: var(--bg-color-9);
-                padding: 1rem;
-                margin: 1rem 0;
+                padding: 1rem 3rem 2rem;
+                margin: 4rem 0;
 
                 ul.navbar-nav {
+                    margin-bottom: 2rem;
+
                     li.nav-item {
                         position: relative;
                         padding: 10px 0;
@@ -46,7 +51,7 @@ header {
 
                         & > a {
                             color: var(--white-color);
-                            font-size: 1rem;
+                            font-size: 2rem;
                             font-weight: 500;
                             padding: 20px;
                             cursor: pointer;
@@ -62,7 +67,7 @@ header {
                         box-shadow: none;
                         background-image: unset;
                         text-align: center;
-                        font-size: 1.2rem;
+                        font-size: 2rem;
                         font-weight: 600;
                         letter-spacing: -.225px;
                         position: relative;
@@ -125,6 +130,8 @@ header {
 @media only screen and (min-width: 1024px) {
     header {
         nav.navbar {
+            margin-top: 0;
+            
             div.container {
                 padding-right: calc(var(--bs-gutter-x)* .5);
                 padding-left: calc(var(--bs-gutter-x)* .5);
@@ -135,19 +142,20 @@ header {
                         width: 7rem;
                     }
                 }
-                button.navbar-toggler {
-                    span.navbar-toggler-icon {
-    
-                    }
-                }
+
                 div.navbar-collapse {
                     background-color: transparent;
-                    // padding: 1rem;
-                    // margin: 0;
+                    padding: 1rem;
+                    margin: 1rem 0;
 
                     ul.navbar-nav {
-                        li {
-    
+                        margin-bottom: 0;
+
+                        li.nav-item {
+                            & > a {
+                                color: var(--white-color);
+                                font-size: 1rem;
+                            }
                         }
                     }
 
@@ -158,10 +166,10 @@ header {
 
                         a {
                             min-width: 7rem;
+                            font-size: 1rem;
 
                             &:first-child {
                                 margin-bottom: 0;
-                                margin-right: 1rem;
                             }
                         }
                     }

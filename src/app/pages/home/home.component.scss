@@ -1,6 +1,10 @@
 :host {
     display: block;
     height: 100%;
+
+    &:focus {
+        outline: none;
+    }
     
     div.curved-wrapper {
         z-index: 2;
@@ -74,6 +78,7 @@
             blockquote {
                 padding-top: 5rem;
                 margin-top: 0;
+
                 p {
                     // color: var(--font-color);
                 }
