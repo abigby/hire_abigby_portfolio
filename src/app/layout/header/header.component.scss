@@ -9,6 +9,8 @@ header {
             max-width: 100%;
        
             a.navbar-brand {
+                display: flex;
+                justify-content: flex-end;
                 color: var(--white-color);
                 margin-left: 1rem;
 

@@ -40,49 +40,40 @@
 
     div.quote-wrapper {
         z-index: 9;
-        height: 100%;
+        height: 30rem;
         background-color: var(--bg-grad-color);
         position: relative;
-        // padding-top: 10rem;
         padding-left: 2rem;
         padding-right: 2rem;
         display: flex;
         align-items: center;
+        top: 0;
 
         blockquote {
             color: var(--font-color);
             text-align: center;
             font-size: 1.5rem;
             letter-spacing: normal;
+            padding-top: 5rem;
             line-height: normal;
-
+            margin: 0 auto;
 
             p {
                 color: var(--font-color);
+                font-size: 1.5rem;
             }
         }
     }
 
     @media only screen and (min-width: 1024px) {
         div.quote-wrapper {
-            z-index: 9;
-            height: 100%;
-            background-color: var(--bg-grad-color);
-            position: relative;
-            // padding-top: 10rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-    
+            top: -5rem;
+            height: 30rem;
+
             blockquote {
-                color: var(--font-color);
-                text-align: center;
-                font-size: 2.5rem;
-                letter-spacing: normal;
-                line-height: normal;
-                margin: 0 auto;
     
                 p {
-                    color: var(--font-color);
+                    // color: var(--font-color);
                 }
             }
         }
