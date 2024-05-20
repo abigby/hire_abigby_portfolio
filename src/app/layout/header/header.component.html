@@ -1,29 +1,31 @@
 <header>
     <nav class="navbar navbar-expand-lg" aria-label="Hire Andrew Bigby Navigation Bar">
         <div class="container">
-            <a class="navbar-brand col-lg-3 me-0" href="#"><img class="nav-logo" src="../../../assets/img/logos/hireabigby_logo_white.png" alt="Hire Andrew Bigby Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinksWrapper" aria-controls="navbarLinksWrapper" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+            <!-- <div class="navbar-toggler-group"> -->
+                <a class="navbar-brand col-lg-3 me-0" href="#"><img class="nav-logo" src="../../../assets/img/logos/hireabigby_logo_white.png" alt="Hire Andrew Bigby Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinksWrapper" aria-controls="navbarLinksWrapper" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-- </div> -->
 
             <div class="collapse navbar-collapse d-lg-flex" id="navbarLinksWrapper">
-                <ul class="navbar-nav col-lg-6 justify-content-lg-center mt-0">
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">// Home</a>
+                    <a class="nav-link active" aria-current="page"  routerLink="/home" routerLinkActive="active">// Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">// See My Projects</a>
+                    <a class="nav-link" routerLink="/projects">// See My Projects</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#" aria-disabled="false">// Resume</a>
+                    <a class="nav-link" routerLink="/resume" aria-disabled="false">// Resume</a>
                     </li>
                     <!-- <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li> -->
                 </ul>
-                <div class="d-lg-flex col-lg-3 justify-content-lg-end social-links">
-                    <a class="btn btn-primary btn-solid me-3">LinkedIn</a>
-                    <a class="btn btn-outline-primary btn-outline">Github</a>
+                <div class="d-lg-flex col-lg-3 social-links">
+                    <a class="btn btn-primary btn-solid" href="https://linkedin.com/in/hireabigby">LinkedIn</a>
+                    <a class="btn btn-outline-primary btn-outline" href="https://github.com/abigby">Github</a>
                 </div>
             </div>
         </div>

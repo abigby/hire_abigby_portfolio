@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  .header,
+  .footer {
+    z-index: 9;
+    flex: none;
+    // background-color: #aaa;
+    // height: 100px;
+    overflow: hidden;
+  }
+  
+  .body.outer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 1;
+  }
+  
+  .body.inner {
+    overflow-y: scroll;
+    flex: 1;
+    // background-color: #ddd;
+  }

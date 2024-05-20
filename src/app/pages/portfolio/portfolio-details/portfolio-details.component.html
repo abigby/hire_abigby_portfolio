@@ -1,0 +1,43 @@
+@if(projectDetails$ | async; as project) {
+    <section class="project-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="title">
+                        Project Details
+                    </h1>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="secondary-title">{{ project[0].title }}</h2>
+                    <img class="project-image" [src]="project[0].large" [alt]="project[0].title">
+                </div>
+                <div class="col-sm-6 pt-10">
+                    <p class="description">{{ project[0].description }}</p>
+                    <div class="tech-stack-group">
+                        <h3 class="tertiary-title">
+                            Tech Stack
+                        </h3>
+                        <ul class="techstack">
+                            @for(skills of project[0].techStack; track skills) {
+                                <li>{{skills}}</li>
+                            } @empty {
+                                <li>There are no skills listed.</li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="button-group">
+                        <a href="#" class="external-link">Visit</a>
+                        <a routerLink="/projects" class="external-link">
+                            <span class="icon">
+                                <svg class="svg-inline--fa fa-angle-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg>
+                            </span>
+                            <span>
+                                Projects
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}

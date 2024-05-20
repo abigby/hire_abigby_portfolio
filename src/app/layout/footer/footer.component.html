@@ -1,1 +1,15 @@
-<p>footer works!</p>
+@if(!isHomeRoute) {
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul>
+                    <li>Github <img src="../../../assets/img/icons/github/github.svg" alt="Github footer logo"></li>
+                    <li>Linkedin <img src="../../../assets/img/icons/linkedin/linkedin.svg" alt="Github footer logo"></li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <p>Handmade by me &copy; {{ currentYear }}</p>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,139 @@
+section.project-details {
+    padding: 5rem 1.5rem;
+
+    img.project-image {
+        border-radius: 0.75rem;
+        width: 100%;
+        height: auto;
+    }
+
+    h2.secondary-title {
+        color: var(--font-color-5);
+        font-weight: 500;
+        line-height: 1.125;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    p.description {
+        font-size: 1.3rem;
+        line-height: 2;
+        color: #fff;
+    }
+
+    div.tech-stack-group {
+        margin: 2rem 0 3rem;
+
+        ul.techstack {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin-top: 1rem;
+    
+            li {
+                padding: 0.3rem;
+                font-size: 1.5rem;
+    
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    
+        h3.tertiary-title {
+            margin-bottom: 0;
+        }
+    }
+
+
+    div.button-group {
+        display: flex;
+        margin: 1rem 0;
+        flex-direction: column;
+
+        a.external-link {
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 1rem;
+            border: 0.063rem solid #fff;
+            text-align: center;
+            border-radius: 2rem;
+            cursor: pointer;
+            width:  100%;
+            text-align: center;
+
+            &:first-child:not(:last-child) {
+                margin-bottom: calc(1rem - 1px);
+            }
+    
+            &:hover {
+                background-color: var(--white-color);
+                color: var(--body-color);
+            }
+    
+            span.icon {
+                // margin-top: 4px;
+                // margin-left: 0;
+                align-items: center;
+                display: inline-flex;
+                justify-content: center;
+                height: 0.5rem;
+                width: 0.7rem;
+
+                .fa-angle-left {
+                    -moz-transform: scaleX(-1);
+                    -webkit-transform: scaleX(-1);
+                    -o-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    section.project-details {
+        
+    
+        img.project-image { }
+    
+        h2.secondary-title { }
+
+    
+        p.description {  }
+    
+        div.tech-stack-group {
+    
+            ul.techstack {
+        
+                li { }
+            }
+        
+            h3.tertiary-title { }
+        }
+    
+    
+        div.button-group {
+    
+            a.external-link {
+        
+                span.icon {
+
+    
+                    .fa-angle-left {
+
+                    }
+                }
+            }
+        }
+    
+    }
+}

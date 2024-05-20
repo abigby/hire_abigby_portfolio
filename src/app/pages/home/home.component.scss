@@ -1,0 +1,90 @@
+:host {
+    display: block;
+    height: 100%;
+    
+    div.curved-wrapper {
+        z-index: 2;
+        width: 100%;
+        bottom: 0;
+        position: relative;
+        mask-size: 100%;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100%;
+        -webkit-mask-repeat: no-repeat;
+        z-index: 2;
+        background-color: var(--white-color) !important;
+    }
+    div.curved-wrapper:after {
+        top: calc(-6vw + 2px);
+        background-position: bottom center;
+        mask-position: bottom;
+        -webkit-mask-position: bottom;
+        -webkit-mask-image: url('./../../../../src/assets/img/curved-section-top.svg');
+        mask-image: url('./../../../../src/assets/img/curved-section-top.svg');
+    }
+    div.curved-wrapper:after,
+    div.curved-wrapper:before {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 6vw;
+        background-color: inherit;
+        content: "";
+        -webkit-mask-size: auto 100%;
+        mask-size: auto 100%;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        left: 0;
+        right: 0;
+    }
+
+    div.quote-wrapper {
+        z-index: 9;
+        height: 100%;
+        background-color: var(--bg-grad-color);
+        position: relative;
+        // padding-top: 10rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        align-items: center;
+
+        blockquote {
+            color: var(--font-color);
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: normal;
+            line-height: normal;
+
+
+            p {
+                color: var(--font-color);
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        div.quote-wrapper {
+            z-index: 9;
+            height: 100%;
+            background-color: var(--bg-grad-color);
+            position: relative;
+            // padding-top: 10rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+    
+            blockquote {
+                color: var(--font-color);
+                text-align: center;
+                font-size: 2.5rem;
+                letter-spacing: normal;
+                line-height: normal;
+                margin: 0 auto;
+    
+                p {
+                    color: var(--font-color);
+                }
+            }
+        }
+    }
+}

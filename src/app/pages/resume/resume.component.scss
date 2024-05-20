@@ -1,0 +1,281 @@
+:host {
+    div.resume-wrapper {
+        #download-resume {
+            font-size: 2rem;
+            text-decoration: underline;
+            color: #1C274C;
+
+            svg {
+                font-size: 1rem;
+                width: 2rem;
+            }
+        }
+
+        background-color: var(--white-color);
+        color: var(--font-color-3);
+        border-radius: 0.75rem;
+        padding: 5rem 2rem 2rem;
+
+        section.heading {
+            margin-bottom: 3rem;
+
+            h1.name {
+                color: var(--font-color-3);
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 800;
+                margin-bottom: 0;
+            }
+            h2.professional-title {
+                text-align: center;
+                color: var(--font-color-2);
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+            div.contact-location {
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0.5rem 0;
+                font-size: 1.3rem;
+                line-height: 1.2;
+            }
+        }
+
+        section.profile-summary {
+            h1.profile-summary-title {
+                color: var(--font-color-3);
+                font-size: 1.5rem;
+                font-weight: 500;
+                text-transform: uppercase;
+
+                span {
+                    font-size: 1rem;
+                    color: var(--font-color-light)
+                }
+            }
+
+            p {
+                font-size: 1.3rem;
+                line-height: 1.5;
+                color: var(--font-color-3);
+            }
+        }
+        section.education-summary {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            h1.education-summary-title {
+                color: var(--font-color-3);
+                font-size: 1.5rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-top: 1.5rem;
+            }
+
+            span.school {
+                margin-bottom: 0.5rem;
+            }
+
+            span.school,
+            span.degree {
+                font-size: 1.3rem;
+                color: var(--font-color-3)
+            }
+        }
+
+        section.technical-skills-summary {
+            h1.skills-section-title {
+                color: var(--font-color-3);
+                font-size: 1.5rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-top: 1.5rem;
+            }
+            
+            & > div {
+                h3 {
+                    color: var(--font-color-3);
+                    font-size: 1.1rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    margin: 0.5rem 0;
+
+                }
+
+                p {
+                    font-size: 1.3rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+        section.work-preference {
+            h3 {
+                color: var(--font-color-3);
+                font-size: 1.5rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-decoration: underline;
+                margin-top: 1.5rem;
+            }
+            dl {
+                dt {
+                    color: var(--font-color-3);
+                    font-size: 1rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+                dd {
+                    color: var(--font-color-3);
+                    font-size: 1rem;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        section.experience-employment-history {
+            h1.experience-employment-history-title {
+                color: var(--font-color-3);
+                font-size: 1.5rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            div.experience {
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+
+                h3.experience-company {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-bottom: 0;
+
+                    span {
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                    span.company {
+                        color:var(--font-color-3);
+                    }
+                    span.date {
+                        color:var(--font-color-light);
+                    }
+                }
+                div.title-location {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: start;
+                    margin: 0.5rem 0;
+
+                    span {
+                        color:var(--font-color-light);
+                        font-size: 1.3rem;
+                        text-transform: uppercase;
+                    }
+                    span.title {
+                        margin-right: 0.5rem;
+                    }
+                    span.location { }
+                }
+                div.experience-description {
+                    margin-top: 0.5rem;
+                    p {
+                        font-size: 1.3rem;
+                        line-height: 1.5;
+                    }
+
+                    ul {
+                        list-style-type: disc;
+                        padding: 0;
+                        margin-top: 1rem;
+                        margin-left: 3rem;
+                        
+                        li {
+                            line-height: 1.5;
+                            padding: 0.3rem;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                div.environtment-technologies {
+                    h3 {
+                        color: var(--font-color-3);
+                        font-size: 1rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        margin-top: 1.5rem;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        div.resume-wrapper {
+            padding: 5rem 5rem 2rem;
+
+            section.heading {
+                margin-bottom: 3rem;
+    
+                h1.name {
+                    color: var(--font-color-3);
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 4rem;
+                    font-weight: 800;
+                }
+                h2.professional-title {
+                    text-align: center;
+                    color: var(--font-color-2);
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    line-height: 1.5;
+                }
+                div.contact-location {
+                    text-align: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: 0.5rem 0;
+                    font-size: 1.3rem;
+                }
+            }
+
+            section.experience-employment-history {
+                div.experience {
+                    h3.experience-company {
+                        span {
+                            font-size: 1.3rem;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                        }
+                        span.company {
+                            color:var(--font-color-3);
+                        }
+                        span.date {
+                            color:var(--font-color-light);
+                        }
+                    }
+                    div.title-location {
+                        span.title {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                    div.experience-description {
+                        margin-top: 0.5rem;
+    
+                        ul {
+                            margin-left: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

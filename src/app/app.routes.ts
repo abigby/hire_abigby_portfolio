@@ -16,6 +16,13 @@ export const routes: Routes = [
         )
     },
     { 
+        path: 'project/:id', 
+        title:"AB Project Details", 
+        loadComponent:() => import('./pages/portfolio/portfolio-details/portfolio-details.component').then(
+            (m) => m.PortfolioDetailsComponent
+        )
+    },
+    { 
         path: 'resume', 
         title:"AB Resume", 
         loadComponent:() => import('./pages/resume/resume.component').then(

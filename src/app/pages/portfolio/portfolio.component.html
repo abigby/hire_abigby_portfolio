@@ -1,1 +1,45 @@
-<p>portfolio works!</p>
+<div class="container">
+    <!-- @if(allProjects$ | async; as techStack) {
+        <div class="row">
+            <div class="col-sm-12">Here are some exciting Libraries &amp; Frameworks that I have used:</div>
+            @for (item of techStack; track item.id) {
+                @if(!item.isHidden) {
+                    <div class="col-sm-6 col-md-3">
+                        <img class="tech-stack-icons" [src]="item.thumbnail" [alt]="item.name">
+                    </div>
+                }
+            }
+        </div>
+    } -->
+</div>
+@if(allProjects$ | async; as projectList) {
+    <section class="projects">
+        <div class="container">
+            <h1 class="title">Recent Public Projects</h1>
+            <div class="project-grid">
+                <div class="columns">
+                    @for(project of projectList; track project.id) {
+                        <div class="column">
+                            <figure class="image">
+                                <img [src]="project.thumbnail" alt="project.title" class="project-thumbnail" [style.viewTransitionName]="'project-id-' + project.id">
+                                <figcaption>
+                                    <h1 class="title">{{project.title}}</h1>
+                                    <a [routerLink]="['/project/', project.id]" class="project-button">
+                                        <span>View App</span>
+                                        <span class="icon">
+                                            <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg>
+                                        </span>
+                                    </a>
+                                </figcaption>
+                                <div class="overlay"></div>
+                            </figure>
+                            <h2 class="secondary-title mobile">
+                                {{ project.title }}
+                            </h2>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+}

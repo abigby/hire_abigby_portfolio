@@ -2,92 +2,168 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 
     nav.navbar {
-        a.navbar-brand {
-            color: var(--white-color);
-            & > img{
-                display: block;
-                width: 7rem;
+        
+        div.container {
+            padding-right: 0;
+            padding-left: 0;
+            max-width: 100%;
+       
+            a.navbar-brand {
+                color: var(--white-color);
+                margin-left: 1rem;
+
+                & > img {
+                    width: 5rem;
+                }
             }
-        }
-        div.navbar-collapse {
+            button.navbar-toggler {
+                border: 2px solid #fff;
+                margin-right: 1rem;
 
-            ul.navbar-nav {
+                span.navbar-toggler-icon {
+                    background-image: url('../../../assets/img/mobile-menu-icon.svg');
+                    background-repeat: no-repeat;
+                }
+            }
+            div.navbar-collapse {
+                background-color: var(--bg-color-9);
+                padding: 1rem;
+                margin: 1rem 0;
 
-                li.nav-item {
-                    position: relative;
-                    padding: 10px 0;
-                    display: flex;
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                    flex-direction: column;
-                    -webkit-box-pack: center;
-                    justify-content: center;
-                    line-height: 1rem;
+                ul.navbar-nav {
+                    li.nav-item {
+                        position: relative;
+                        padding: 10px 0;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        justify-content: center;
+                        line-height: 1rem;
 
-                    & > a {
-                        color: var(--white-color);
-                        font-size: 1rem;
-                        font-weight: 500;
-                        padding: 30px 20px 20px;
+                        & > a {
+                            color: var(--white-color);
+                            font-size: 1rem;
+                            font-weight: 500;
+                            padding: 20px;
+                            cursor: pointer;
 
-                        &:hover {
-                            text-decoration: underline;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                div.social-links {
+                    a {
+                        box-shadow: none;
+                        background-image: unset;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        letter-spacing: -.225px;
+                        position: relative;
+                        display: inline-block;
+                        transition: all 0.3s ease 0s;
+                        cursor: pointer;
+                        border-width: 0.125rem !important;
+                        border-style: solid;
+                        line-height: 1;
+                        min-height: 3rem;
+                        min-width: 100%;
+                        padding: 0.813rem 0.625rem !important;
+                        margin: auto 0;
+
+                        &:first-child {
+                            margin-bottom: 1rem;
+                        }
+
+                        &.btn-solid {
+                            background-color: var(--white-color) !important;
+                            border-color: var(--white-color) !important;
+                            color: #000 !important;
+
+                            &:focus {
+                                outline: 0.25rem solid #c0e0fa !important;
+                            }
+                            &:hover {
+                                background-color: #e4e4e4 !important;
+                                border-color: #cccccc !important;
+                                color: #000 !important;
+                                text-decoration: none;
+                                padding: 0.813rem 0.625rem !important;
+                            }
+                        }
+                        &.btn-outline {
+                            background-color: transparent !important;
+                            border-color: var(--white-color) !important;
+                            color: var(--white-color) !important;
+
+                            &:focus {
+                                outline: 0.25rem solid #c0e0fa !important;
+                            }
+
+                            &:hover {
+                                background-color: #efeff2 !important;
+                                border-color: var(--white-color) !important;
+                                color: #1d63ed !important;
+                                padding: 0.813rem 0.625rem !important;
+                            }
                         }
                     }
                 }
             }
-            div.social-links {
-                a {
-                    box-shadow: none;
-                    background-image: unset;
-                    text-align: center;
-                    font-size: 1.2rem;
-                    font-weight: 600;
-                    letter-spacing: -.225px;
-                    position: relative;
-                    display: inline-block;
-                    transition: all 0.3s ease 0s;
-                    cursor: pointer;
-                    border-width: 0.125rem !important;
-                    border-style: solid;
-                    line-height: 1;
-                    min-height: 3rem;
-                    min-width: 5rem;
-                    padding: 0.813rem 0.625rem !important;
-                    margin: auto 0;
+        }
+    }
+}
 
-                    &.btn-solid {
-                        background-color: var(--white-color) !important;
-                        border-color: var(--white-color) !important;
-                        color: #000 !important;
 
-                        &:focus {
-                            outline: 0.25rem solid #c0e0fa !important;
-                        }
-                        &:hover {
-                            background-color: #e4e4e4 !important;
-                            border-color: #cccccc !important;
-                            color: #000 !important;
-                            text-decoration: none;
-                            padding: 0.813rem 0.625rem !important;
+/* Medium devices (landscape tablets, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    header {
+        nav.navbar {
+            div.container {
+                padding-right: calc(var(--bs-gutter-x)* .5);
+                padding-left: calc(var(--bs-gutter-x)* .5);
+
+                a.navbar-brand {
+                    & > img{
+                        display: block;
+                        width: 7rem;
+                    }
+                }
+                button.navbar-toggler {
+                    span.navbar-toggler-icon {
+    
+                    }
+                }
+                div.navbar-collapse {
+                    background-color: transparent;
+                    // padding: 1rem;
+                    // margin: 0;
+
+                    ul.navbar-nav {
+                        li {
+    
                         }
                     }
-                    &.btn-outline {
-                        background-color: transparent !important;
-                        border-color: var(--white-color) !important;
-                        color: var(--white-color) !important;
 
-                        &:focus {
-                            outline: 0.25rem solid #c0e0fa !important;
-                        }
+                    div.social-links {
+                        display: flex;
+                        min-width: 10rem;
+                        justify-content: space-around !important;
 
-                        &:hover {
-                            background-color: #efeff2 !important;
-                            border-color: var(--white-color) !important;
-                            color: #1d63ed !important;
-                            padding: 0.813rem 0.625rem !important;
+                        a {
+                            min-width: 7rem;
+
+                            &:first-child {
+                                margin-bottom: 0;
+                                margin-right: 1rem;
+                            }
                         }
                     }
+                    
                 }
             }
         }
