@@ -4,7 +4,7 @@ export const PORTFOLIO_PROJECTS = [
         title: 'Strivion',
         url: null,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-        isHidden: false,
+        isHidden: true,
         techStack: [
             'Angular',
             'Angular Material',
@@ -21,7 +21,7 @@ export const PORTFOLIO_PROJECTS = [
         id: 2,
         url: null,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-        isHidden: false,
+        isHidden: true,
         title: 'Moda',
         techStack: [
             'Angular',
@@ -37,17 +37,19 @@ export const PORTFOLIO_PROJECTS = [
       },
       {
         id: 3,
-        url: null,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+        url: 'https://www.mozarkfirepits.com/home',
+        description: "Mozark Fire Pits prolong the enjoyment of your backyard's landscape throughout the seasons, from picturesque summer nights and winter gatherings around a fire that provides heat, comfort, provoke conversations and elegance.",
         isHidden: false,
         title: 'Mozark Fire Pits',
         techStack: [
             'Angular',
-            'Angular Material',
             'Bootstrap',
             'RxJs',
-            'Node',
-            'Typescript'
+            'Node.js',
+            'Typescript',
+            'Javascript',
+            'CSS3',
+            'HTML5'
         ],
         thumbnail:
           'https://fastly.picsum.photos/id/102/300/200.jpg?hmac=a2ZH-4vlZvLUy0cD_85w1Fk4_xhDsZ0blu5yDZRoTJo',
@@ -58,7 +60,7 @@ export const PORTFOLIO_PROJECTS = [
         id: 4,
         url: null,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-        isHidden: false,
+        isHidden: true,
         title: 'Quotes UI',
         techStack: [
             'Angular',

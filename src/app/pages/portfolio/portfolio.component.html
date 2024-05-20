@@ -16,10 +16,11 @@
     <section class="projects">
         <div class="container">
             <h1 class="title">Recent Public Projects</h1>
+            <p>More Projects will be loaded soon</p>
             <div class="project-grid">
                 <div class="columns">
                     @for(project of projectList; track project.id) {
-                        <div class="column">
+                        <div class="column" *ngIf="!project.isHidden">
                             <figure class="image">
                                 <img [src]="project.thumbnail" alt="project.title" class="project-thumbnail" [style.viewTransitionName]="'project-id-' + project.id">
                                 <figcaption>
